@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhishek Sumeet Toppo | Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background: #f9f9f9;
       color: #333;
     }
 
-    header {
-      background-color: #222;
-      color: white;
-      padding: 1em 2em;
-      text-align: center;
-    }
-
     nav {
-      background-color: #333;
-      padding: 0.5em 2em;
+      background: #222;
+      color: white;
+      padding: 1em;
     }
 
     nav ul {
       list-style: none;
+      display: flex;
+      gap: 2em;
       margin: 0;
       padding: 0;
-      display: flex;
-      gap: 1.5em;
     }
 
     nav ul li a {
@@ -43,36 +36,16 @@
       padding: 2em;
     }
 
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3em;
-    }
-
     .project {
-      background-color: white;
+      background: white;
       padding: 1em;
-      margin: 1em 0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #222;
-      color: white;
-      padding: 1em;
-      margin-top: 2em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1.5em;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Abhishek Sumeet Toppo</h1>
-    <p>Python Automation Engineer | Build & Release | CI/CD | DevOps Tools</p>
-  </header>
-
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
@@ -83,39 +56,29 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a Python Automation Engineer with over 2 years of experience in CI/CD pipelines, scripting, build automation, and DevOps practices. Skilled in tools like GitHub, Jira, CMake, Gradle, Bazel, and Grafana. Passionate about streamlining developer workflows and ensuring high-quality software delivery.</p>
+    <p>I’m Abhishek Sumeet Toppo, a Python Automation Engineer with expertise in CI/CD, PR bots, build automation, and monitoring tools. I build smart, scalable solutions for software delivery and development lifecycle efficiency.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-
     <div class="project">
-      <h3>PR Bot Validator (GitHub + Jira API)</h3>
-      <p>Designed and implemented a PR validation bot that checks Jira fields (scope, fixVersion, epic) and enforces GitHub PR templates using REST APIs. Integrated into CI/CD pipelines to enforce compliance and reduce review errors.</p>
+      <h3>PR Bot Validator</h3>
+      <p>Automates GitHub pull request validation using Python, Jira API, and GitHub REST API.</p>
     </div>
-
     <div class="project">
-      <h3>Build Automation (CMake / Bazel / Gradle)</h3>
-      <p>Worked as a Build Engineer using CMake for cross-platform builds, Bazel for incremental backend builds, and Gradle for Java components. Enabled scalable build automation for embedded and multi-language projects.</p>
+      <h3>Build Automation</h3>
+      <p>Worked with CMake, Bazel, and Gradle to manage and automate large build systems.</p>
     </div>
-
     <div class="project">
-      <h3>CI/CD Monitoring (Grafana + Azure)</h3>
-      <p>Integrated monitoring for CI/CD pipelines using Grafana dashboards and Azure DevOps. Enabled real-time visibility, metrics tracking, and proactive issue detection during development and release cycles.</p>
+      <h3>CI/CD Monitoring</h3>
+      <p>Monitored pipelines and builds using Grafana and Azure Pipelines for proactive issue detection.</p>
     </div>
-
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
-    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">View Profile</a></p>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Abhishek Sumeet Toppo. All rights reserved.</p>
-  </footer>
 </body>
-
 </html>
