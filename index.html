@@ -1,76 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Sumeet Toppo | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Sumeet Toppo | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 0.5em 2em;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    h2 {
+      color: #444;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+
+    .project {
+      background-color: white;
+      padding: 1em;
+      margin: 1em 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
 
-    <!-- Header -->
-    <header class="bg-blue-600 text-white py-10">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold">Abhishek Sumeet Toppo</h1>
-            <p class="text-lg mt-2">Python Automation & Build Engineer | CI/CD | PR Bots | Grafana | Azure | GitHub/Jira APIs</p>
-            <a href="https://github.com/abhisheksumeet" target="_blank" class="mt-4 inline-block px-4 py-2 border border-white rounded hover:bg-blue-700">
-                GitHub Profile
-            </a>
-        </div>
-    </header>
+<body>
+  <header>
+    <h1>Abhishek Sumeet Toppo</h1>
+    <p>Python Automation Engineer | Build & Release | CI/CD | DevOps Tools</p>
+  </header>
 
-    <!-- Featured Projects -->
-    <section class="container mx-auto my-16">
-        <h2 class="text-2xl font-semibold mb-6 text-center">Featured Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded shadow-lg">
-                <h3 class="font-bold text-xl">PR Bot Validator</h3>
-                <p class="mt-2 text-sm text-gray-600">
-                    Developed a GitHub PR bot using Python that integrates with Jira APIs to enforce field validation (scope, fixVersion, epic) and automate PR checks in CI pipelines.
-                </p>
-            </div>
-            <div class="bg-white p-6 rounded shadow-lg">
-                <h3 class="font-bold text-xl">Build Automation</h3>
-                <p class="mt-2 text-sm text-gray-600">
-                    Implemented scalable builds using CMake, Bazel, and Gradle for embedded and backend systems, with automation via Bash and Python scripts integrated into Azure Pipelines.
-                </p>
-            </div>
-            <div class="bg-white p-6 rounded shadow-lg">
-                <h3 class="font-bold text-xl">CI/CD Monitoring</h3>
-                <p class="mt-2 text-sm text-gray-600">
-                    Integrated Grafana dashboards with Azure Pipelines for real-time tracking of build status, system performance, and proactive issue detection across CI workflows.
-                </p>
-            </div>
-        </div>
-    </section>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Skills -->
-    <section class="container mx-auto my-16">
-        <h2 class="text-2xl font-semibold mb-6 text-center">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700 text-sm">
-            <div>
-                <ul class="list-disc pl-5">
-                    <li>Python, Bash, SQL</li>
-                    <li>CI/CD (GitHub Actions, Azure Pipelines)</li>
-                    <li>Build Tools: CMake, Bazel, Gradle</li>
-                    <li>REST API Integrations (GitHub, Jira)</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="list-disc pl-5">
-                    <li>Grafana Dashboards</li>
-                    <li>Automation Frameworks</li>
-                    <li>Version Control (Git)</li>
-                    <li>Problem Solving, Debugging, Collaboration</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Python Automation Engineer with over 2 years of experience in CI/CD pipelines, scripting, build automation, and DevOps practices. Skilled in tools like GitHub, Jira, CMake, Gradle, Bazel, and Grafana. Passionate about streamlining developer workflows and ensuring high-quality software delivery.</p>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-6 text-center">
-        <p>&copy; 2025 Abhishek Sumeet Toppo. All Rights Reserved.</p>
-    </footer>
+  <section id="projects">
+    <h2>Projects</h2>
 
+    <div class="project">
+      <h3>PR Bot Validator (GitHub + Jira API)</h3>
+      <p>Designed and implemented a PR validation bot that checks Jira fields (scope, fixVersion, epic) and enforces GitHub PR templates using REST APIs. Integrated into CI/CD pipelines to enforce compliance and reduce review errors.</p>
+    </div>
+
+    <div class="project">
+      <h3>Build Automation (CMake / Bazel / Gradle)</h3>
+      <p>Worked as a Build Engineer using CMake for cross-platform builds, Bazel for incremental backend builds, and Gradle for Java components. Enabled scalable build automation for embedded and multi-language projects.</p>
+    </div>
+
+    <div class="project">
+      <h3>CI/CD Monitoring (Grafana + Azure)</h3>
+      <p>Integrated monitoring for CI/CD pipelines using Grafana dashboards and Azure DevOps. Enabled real-time visibility, metrics tracking, and proactive issue detection during development and release cycles.</p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
+    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abhishek Sumeet Toppo. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
